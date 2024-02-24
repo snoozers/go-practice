@@ -1,8 +1,8 @@
 bash:
 	@docker run \
-		--name golang-practice \
-		--mount type=bind,source=./src,destination=/var/src \
-		--workdir /var/src \
+		--name go-practice \
+		--mount type=bind,source=./,destination=/var/go-practice \
+		--workdir /var/go-practice \
 		--rm \
 		-it \
-		golang:1.21
+		golang:1.22
